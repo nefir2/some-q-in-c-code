@@ -2,6 +2,7 @@
 
 #include "Solution.h"
 
+#pragma region first q
 const double y = 2.16;
 double avg(double a, double b) {
 	return (a + b) / 2;
@@ -29,7 +30,8 @@ void qOne() {
 	printf("prod(%.2f, %.2f, %.2f) = %.2f\n", a, b, c, prod(a, b, c));
 	printf("cnvrt(%.2f) = %.2f\ncnvrt(%.2f) = %.2f\ncnvrt(%.2f) = %.2f\n", a, cnvrt(a), b, cnvrt(b), c, cnvrt(c));
 }
-
+#pragma endregion
+#pragma region second q
 int isEven(int number) {
 	return number % 2 == 0;
 }
@@ -92,3 +94,4 @@ void qTwo() {
 	if (mbans == c * d) printf("вы ответили верно.");
 	else printf("вы ответили неверно. верный ответ: %d", c * d);
 }
+#pragma endregion
