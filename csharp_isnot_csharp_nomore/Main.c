@@ -12,7 +12,7 @@ int main() {
 	qTwo();
 	
 	char x[1];
-	printf("\n\nдля завершения введите \"q\" . . . ");
+	printf("\n\nto end write \"q\" . . . ");
 	scanf_s("%s", x, sizeof(x));
 	return 0;
 }
