@@ -1,3 +1,5 @@
-﻿  Solution.c
-C:\Users\1\source\repos\csharp_isnot_csharp_nomore\csharp_isnot_csharp_nomore\Solution.c(73,9): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+﻿  Main.c
+  Solution.c
+C:\Users\1\source\repos\csharp_isnot_csharp_nomore\csharp_isnot_csharp_nomore\Solution.c(75,9): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+  Создание кода...
   csharp_isnot_csharp_nomore.vcxproj -> C:\Users\1\source\repos\csharp_isnot_csharp_nomore\Debug\csharp_isnot_csharp_nomore.exe

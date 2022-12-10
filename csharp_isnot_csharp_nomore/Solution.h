@@ -41,7 +41,6 @@ double cnvrt(double);
 /// </summary>
 void qOne();
 #pragma endregion
-
 #pragma region second q
 /// <summary>
 /// проверка чётности числа.
