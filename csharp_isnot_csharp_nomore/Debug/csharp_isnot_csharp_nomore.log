@@ -1,5 +1,9 @@
-﻿  Main.c
+﻿  inou.c
+C:\Users\1\source\repos\csharp_isnot_csharp_nomore\csharp_isnot_csharp_nomore\inou.c(6,10): warning C4477: "scanf_s": в строке форматирования "%f" требуется аргумент типа "float *", но вариативный аргумент "1" имеет тип "double *"
+C:\Users\1\source\repos\csharp_isnot_csharp_nomore\csharp_isnot_csharp_nomore\inou.c(6,10): message : рекомендуется использовать "%lf" в строке форматирования
   Solution.c
-C:\Users\1\source\repos\csharp_isnot_csharp_nomore\csharp_isnot_csharp_nomore\Solution.c(75,9): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\1\source\repos\csharp_isnot_csharp_nomore\csharp_isnot_csharp_nomore\Solution.c(76,9): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+  Main.c
+C:\Users\1\source\repos\csharp_isnot_csharp_nomore\csharp_isnot_csharp_nomore\Main.c(13,9): warning C4129: T: неизвестная escape-последовательность
   Создание кода...
   csharp_isnot_csharp_nomore.vcxproj -> C:\Users\1\source\repos\csharp_isnot_csharp_nomore\Debug\csharp_isnot_csharp_nomore.exe

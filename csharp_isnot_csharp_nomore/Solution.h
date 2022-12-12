@@ -76,3 +76,29 @@ int getSingleDouble(char*);
 /// </summary>
 void qTwo();
 #pragma endregion
+#pragma region third q
+/// <summary>
+/// вывод сообщения, и ввод числа с консоли.
+/// </summary>
+/// <param name="message">сообщение о вводе.</param>
+/// <returns>число введённое в консоли типа <see cref="int"/>.</returns>
+int getInt(char*);
+/// <summary>
+/// создание динамического массива, и ввод его размера и элементов с консоли.
+/// </summary>
+/// <param name="size">возврат количества элементов в массиве, в указанную переменную.</param>
+/// <returns>динамический массив типа <see cref="int*"/></returns>
+int* makeArray(int*);
+/// <summary>
+/// функция удаления массива.
+/// </summary>
+/// <remarks>
+/// обязательно вызывать после завершения работы с массивом.
+/// </remarks>
+/// <param name="array">массив, который надо удалить.</param>
+void deleteArray(int*);
+/// <summary>
+/// функция запуска третьего задания.
+/// </summary>
+void qThree();
+#pragma endregion

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <malloc.h>
 
 #include "Solution.h"
 
@@ -93,5 +94,50 @@ void qTwo() {
 	scanf_s("%lf", &mbans);
 	if (mbans == c * d) printf("вы ответили верно.");
 	else printf("вы ответили неверно. верный ответ: %d", c * d);
+}
+#pragma endregion
+#pragma region third q
+int getInt(char* message)
+{
+	int ret;
+	printf(message);
+	scanf_s("%d", &ret);
+	return ret;
+}
+int* makeArray(int* size) {
+	*size = getInt("введите размер массива: ");
+	int* array = malloc(*size * sizeof(int)); //calloc(size, sizeof(int));
+
+	for (int i = 0; i < *size; i++) {
+		printf("элемент массива #%d: ", i);
+		scanf_s("%d", &array[i]);
+	}
+	return array;
+}
+void deleteArray(int* array) {
+	free(array);
+}
+
+void qThree()
+{
+	int left = getInt("введите первое число диапазона: ");
+	int right = getInt("введите второе число диапазона: ");
+	int sum = 0;
+	int count = 0;
+	for (int i = left; i <= right; i++) {
+		sum += i;
+		count++;
+	}
+	printf("количество чисел в диапазоне: %d\nсумма чисел в диапазоне: %d.\n", count, sum);
+	int size;
+	int* array = makeArray(&size);
+	sum = 0;
+	int min = array[0];
+	for (int i = 0; i < size; i++) {
+		if (array[i] % 2 == 0) sum += array[i];
+		if (min > array[i]) min = array[i];
+	}
+	printf("сумма чётных элементов: %d\nминимальный элемент массива: %d", sum, min);
+	deleteArray(array);
 }
 #pragma endregion
