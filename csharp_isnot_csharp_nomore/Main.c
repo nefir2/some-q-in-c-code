@@ -10,7 +10,7 @@ int main() {
 	qOne();
 	printf("\n\n\t\t\tSECOND PART\n\n");
 	qTwo();
-	printf("\n\n\t\t\THIRD PART\n\n");
+	printf("\n\n\t\t\tTHIRD PART\n\n");
 	qThree();
 	
 	char x[1];
