@@ -147,7 +147,7 @@ void repeater(char* message, int times) {
 }
 char* makeString(char* message, int length) {
 	printf(message);
-	char* ret = calloc(length, sizeof(char));
+	char* ret = malloc(length * sizeof(char));
 	fgets(ret, length, stdin);
 	return ret;
 }
