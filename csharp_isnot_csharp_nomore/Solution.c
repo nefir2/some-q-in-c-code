@@ -141,3 +141,30 @@ void qThree()
 	deleteArray(array);
 }
 #pragma endregion
+#pragma region fourth q
+void repeater(char* message, int times) {
+	for (int i = 0; i < times; i++) printf(message);
+}
+char* makeString(char* message, int length) {
+	printf(message);
+	char* ret = calloc(length, sizeof(char));
+	fgets(ret, length, stdin);
+	return ret;
+}
+int elemFinder(int* array, int size, int elem) {
+	for (int i = 0; i < size; i++) if (elem == array[i]) return i;
+	return -1;
+}
+
+void qFour() {
+	int charsize = 100;
+	char* sand = makeString("введите строку которую надо повторить: ", charsize);
+	repeater(sand, getInt("введите количество повторов: "));
+	free(sand);
+	int size;
+	int* array = makeArray(&size);
+	int index = elemFinder(array, size, getInt("введите элемент, который надо найти: "));
+	printf("индекс указанного элемента: %d", index);
+	free(array);
+}
+#pragma endregion

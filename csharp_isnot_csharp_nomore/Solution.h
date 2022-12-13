@@ -86,6 +86,9 @@ int getInt(char*);
 /// <summary>
 /// создание динамического массива, и ввод его размера и элементов с консоли.
 /// </summary>
+/// <remarks>
+/// use free() or deleteArray() !!!
+/// </remarks>
 /// <param name="size">возврат количества элементов в массиве, в указанную переменную.</param>
 /// <returns>динамический массив типа <see cref="int*"/></returns>
 int* makeArray(int*);
@@ -97,8 +100,37 @@ int* makeArray(int*);
 /// </remarks>
 /// <param name="array">массив, который надо удалить.</param>
 void deleteArray(int*);
+
 /// <summary>
 /// функция запуска третьего задания.
 /// </summary>
 void qThree();
+#pragma endregion
+#pragma region fourth q
+/// <summary>
+/// множественный вывод указанной строки.
+/// </summary>
+/// <param name="message">строка, которую надо вывести.</param>
+/// <param name="times">количество раз вывода строки.</param>
+void repeater(char*, int);
+/// <summary>
+/// вывод сообщения, и ввод строки с консоли.
+/// </summary>
+/// <param name="message">сообщение о вводе.</param>
+/// <param name="length">количество элементов в строке.</param>
+/// <returns>строка введённая в консоли типа <see cref="char*"/>.</returns>
+char* makeString(char*, int);
+/// <summary>
+/// нахождение индекса указанного элемента в указанном массиве. 
+/// </summary>
+/// <param name="array">массив, в котором нужно найти элемент.</param>
+/// <param name="size">размер массива в котором ведётся поиск.</param>
+/// <param name="elem">элемент, индекс которого нужно найти.</param>
+/// <returns>индекс указанного элемента, или -1 если элемент не найден.</returns>
+int elemFinder(int*, int, int);
+
+/// <summary>
+/// функция запуска четвёртого задания.
+/// </summary>
+void qFour();
 #pragma endregion
