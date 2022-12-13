@@ -6,12 +6,12 @@
 int main() {
 	setlocale(LC_ALL, "ru-ru");
 
-	//printf("\n\n\t\t\tFIRST PART\n\n");
-	//qOne();
-	//printf("\n\n\t\t\tSECOND PART\n\n");
-	//qTwo();
-	//printf("\n\n\t\t\tHIRD PART\n\n");
-	//qThree();
+	printf("\n\n\t\t\tFIRST PART\n\n");
+	qOne();
+	printf("\n\n\t\t\tSECOND PART\n\n");
+	qTwo();
+	printf("\n\n\t\t\tHIRD PART\n\n");
+	qThree();
 	printf("\n\n\t\t\tHIRD PART\n\n");
 	qFour();
 
