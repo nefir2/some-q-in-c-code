@@ -145,6 +145,12 @@ void qFour();
 /// <returns></returns>
 double distance(double, double, double, double);
 /// <summary>
+/// функци€ получени€ значени€ с консоли типа <see cref="double"/>.
+/// </summary>
+/// <param name="message">сообщение перед вводом значени€.</param>
+/// <returns>значение полученное в консоли.</returns>
+double getDouble(char*);
+/// <summary>
 /// структура представл€юща€ персонажа.
 /// </summary>
 typedef struct { int maxHealth; int health; int damage; int speed; } Character;
@@ -180,13 +186,6 @@ int doubleDamage(Character*);
 /// </summary>
 /// <param name="ch">переменна€ структуры, значени€ которой надо вывести.</param>
 void printCharacter(Character*);
-
-/// <summary>
-/// функци€ получени€ значени€ с консоли типа <see cref="double"/>.
-/// </summary>
-/// <param name="message">сообщение перед вводом значени€.</param>
-/// <returns>значение полученное в консоли.</returns>
-double getDouble(char* message);
 
 /// <summary>
 /// функци€ запуска п€того задани€.

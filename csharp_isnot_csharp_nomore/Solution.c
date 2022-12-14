@@ -173,6 +173,12 @@ void qFour() {
 double distance(double x1, double y1, double x2, double y2) {
 	return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 }
+double getDouble(char* message) {
+	printf(message);
+	double d;
+	scanf_s("%lf", &d);
+	return d;
+}
 //здесь было определение структуры персонаж, но C-lang воспринимает это как переопределение.
 
 Character* ctor(int maxHealth, int health, int damage, int speed) {
@@ -195,13 +201,6 @@ int doubleDamage(Character* ch) {
 }
 void printCharacter(Character* ch) {
 	printf("maxHealth = %d;\nhealth = %d;\ndamage = %d;\nspeed = %d;\n", ch->maxHealth, ch->health, ch->damage, ch->speed);
-}
-
-double getDouble(char* message) {
-	printf(message);
-	double d;
-	scanf_s("%lf", &d);
-	return d;
 }
 
 void qFive() {
