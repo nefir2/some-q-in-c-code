@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
+#include <math.h>
 
 #include "Solution.h"
 
@@ -166,5 +167,57 @@ void qFour() {
 	int index = elemFinder(array, size, getInt("введите элемент, который надо найти: "));
 	printf("индекс указанного элемента: %d", index);
 	free(array);
+}
+#pragma endregion
+#pragma region fifth q
+double distance(double x1, double y1, double x2, double y2) {
+	return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+}
+//здесь было определение структуры персонаж, но C-lang воспринимает это как переопределение.
+
+Character* ctor(int maxHealth, int health, int damage, int speed) {
+	Character* ch = malloc(sizeof(Character));
+	ch->maxHealth = maxHealth;
+	ch->health = health;
+	ch->damage = damage;
+	ch->speed = speed;
+	return ch;
+}
+void addHealth(Character* ch, int health) {
+	if (ch->health + health > ch->maxHealth) ch->health = ch->maxHealth;
+	else ch->health += health;
+}
+int currentDamagePerSecond(Character* ch) {
+	return ch->damage * ch->health / ch->maxHealth;
+}
+int doubleDamage(Character* ch) {
+	return ch->damage * 2;
+}
+void printCharacter(Character* ch) {
+	printf("maxHealth = %d;\nhealth = %d;\ndamage = %d;\nspeed = %d;\n", ch->maxHealth, ch->health, ch->damage, ch->speed);
+}
+
+double getDouble(char* message) {
+	printf(message);
+	double d;
+	scanf_s("%lf", &d);
+	return d;
+}
+
+void qFive() {
+	double x1, y1, x2, y2;
+	x1 = getDouble("введите x первой точки: ");
+	y1 = getDouble("введите y первой точки: ");
+	x2 = getDouble("введите x второй точки: ");
+	y2 = getDouble("введите y второй точки: ");
+	printf("distance = %lf\n", distance(x1, y1, x2, y2));
+	Character* ch = ctor(getInt("введите максимальное здоровье персонажа: "), getInt("введите текущее здоровье персонажа: "), getInt("введите наносимый урон персонажа: "), getInt("введите скорость персонажа: "));
+	printCharacter(ch);
+	addHealth(ch, getInt("введите сколько добавить здоровья: "));
+	printCharacter(ch);
+	printf("currentDamagePerSecond: %d\n", currentDamagePerSecond(ch));
+	printf("doubleDamage: %d\n", doubleDamage(ch));
+
+	free(ch);
 }
 #pragma endregion

@@ -134,3 +134,62 @@ int elemFinder(int*, int, int);
 /// </summary>
 void qFour();
 #pragma endregion
+#pragma region fifth q
+/// <summary>
+/// функция рассчёта расстояния двух точек на координатной плоскости.
+/// </summary>
+/// <param name="x1">позиция первой точки по X.</param>
+/// <param name="y1">позиция первой точки по Y.</param>
+/// <param name="x2">позиция второй точки по X.</param>
+/// <param name="y2">позиция второй точки по Y.</param>
+/// <returns></returns>
+double distance(double, double, double, double);
+/// <summary>
+/// структура представляющая персонажа.
+/// </summary>
+typedef struct { int maxHealth; int health; int damage; int speed; } Character;
+/// <summary>
+/// функция-конструктор структуры <see cref="Character"/>.
+/// </summary>
+/// <param name="maxHealth">максимальное здоровье персонажа.</param>
+/// <param name="health">текущее здоровье персонажа.</param>
+/// <param name="damage">урон персонажа.</param>
+/// <param name="speed">скорость персонажа.</param>
+/// <returns>переменная структуры с установленными указанными значениями.</returns>
+Character* ctor(int, int, int, int);
+/// <summary>
+/// добавление здоровья персонажа.
+/// </summary>
+/// <param name="ch">переменная, в которой надо изменить здоровье персонажа.</param>
+/// <param name="health">значение, которое нужно добавить в здоровье персонажа.</param>
+void addHealth(Character*, int);
+/// <summary>
+/// получение текущего урона в секунду по формуле.
+/// </summary>
+/// <param name="ch">переменная, у которой находятся значения для расчёта.</param>
+/// <returns>значение полученное из формулы типа <see cref="int"/>.</returns>
+int currentDamagePerSecond(Character*);
+/// <summary>
+/// получение значения двойного урона персонажа.
+/// </summary>
+/// <param name="ch">персонаж, которого двойной урон надо получить.</param>
+/// <returns>двойной урон типа <see cref="int"/>.</returns>
+int doubleDamage(Character*);
+/// <summary>
+/// функция вывода полей и их значений структуры <see cref="Character"/> в консоль.
+/// </summary>
+/// <param name="ch">переменная структуры, значения которой надо вывести.</param>
+void printCharacter(Character*);
+
+/// <summary>
+/// функция получения значения с консоли типа <see cref="double"/>.
+/// </summary>
+/// <param name="message">сообщение перед вводом значения.</param>
+/// <returns>значение полученное в консоли.</returns>
+double getDouble(char* message);
+
+/// <summary>
+/// функция запуска пятого задания.
+/// </summary>
+void qFive();
+#pragma endregion

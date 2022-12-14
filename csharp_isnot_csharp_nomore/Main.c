@@ -12,8 +12,10 @@ int main(void) {
 	//qTwo();
 	//printf("\n\n\t\t\tTHIRD PART\n\n");
 	//qThree();
-	printf("\n\n\t\t\tFOURTH PART\n\n");
-	qFour();
+	//printf("\n\n\t\t\tFOURTH PART\n\n");
+	//qFour();
+	printf("\n\n\t\t\tFIFTH PART\n\n");
+	qFive();
 	
 	//char x[1];
 	//printf("\n\nto end write \"q\" . . . ");
