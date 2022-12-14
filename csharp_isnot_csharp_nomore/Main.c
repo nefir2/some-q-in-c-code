@@ -19,7 +19,7 @@ int main(void) {
 	
 	//char x[1];
 	//printf("\n\nto end write \"q\" . . . ");
-	getchar();
+	//getchar();
 	//fgets(x, 1, stdin);
 	return 0;
 }
